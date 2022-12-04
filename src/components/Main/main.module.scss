@@ -1,16 +1,22 @@
+@import "./adaptive.scss";
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 .main__container {
   font-family: "Inter", sans-serif;
-
   background: linear-gradient(
     258.75deg,
     #000000 73.28%,
     rgba(27, 2, 69, 0.98) 100%
   );
-  height: 100vh;
+  height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  @include breackpoint(lg) {
+    background:black;
+  }
+  @include breackpoint(md) {
+    background:black;
+  }
 
   .img__blur {
     margin-top: 50px;
@@ -20,12 +26,29 @@
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: 85%;
+    @include breackpoint(lg) {
+      background-size: 900px;
+      width: 100%;
+      height: 100vh;
+    }
+    @include breackpoint(md) {
+      background-size: 100%;
+      width: 100%;
+      height: 100vh;
+      margin-top: -40px;
+    }
     .first__hr {
       height: 2px;
       background-color: white;
       width: 43.3%;
       border-radius: 27px;
       margin-left: 10.05%;
+      @include breackpoint(lg) {
+        display: none;
+      }
+      @include breackpoint(md) {
+        display: none;
+      }
     }
     .second__hr {
       height: 2px;
@@ -33,6 +56,12 @@
       width: 77.3%;
       margin-left: 10.05%;
       border-radius: 27px;
+      @include breackpoint(lg) {
+        display: none;
+      }
+      @include breackpoint(md) {
+        display: none;
+      }
     }
     .main__content {
       width: 80%;
@@ -43,6 +72,12 @@
       background-repeat: no-repeat;
       background-position: center;
       background-position-x: center;
+      @include breackpoint(lg) {
+        background: none;
+      }
+      @include breackpoint(md) {
+        background: none;
+      }
       .site__content {
         .container {
           width: 45%;
@@ -52,6 +87,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @include breackpoint(lg) {
+              display: block;
+            }
+            @include breackpoint(md) {
+              display: block;
+            }
             img {
               width: 100px;
             }
@@ -61,6 +102,12 @@
               font-size: 22px;
               line-height: 39px;
               color: #ffffff;
+              @include breackpoint(lg) {
+                font-size: 18px;
+              }
+              @include breackpoint(md) {
+                font-size: 13px;
+              }
             }
           }
         }
@@ -78,6 +125,20 @@
             left: 34%;
             top: 70%;
             height: 10vh;
+            @include breackpoint(lg) {
+              left: 50%;
+            }
+            @include breackpoint(md) {
+              left: 30%;
+              top: 80%;
+            }
+            @include breackpoint(sm) {
+              display: none;
+            }
+            @include breackpoint(xs) {
+              display: none;
+            }
+            
             p {
               position: relative;
               left: 28%;
@@ -88,12 +149,12 @@
             }
             p::before {
               content: "";
-              position: absolute; 
+              position: absolute;
               left: -8px;
               transform: rotate(45deg);
               bottom: 20px;
-              border: 9px solid transparent; 
-              border-bottom: 10px solid #ffb53d; 
+              border: 9px solid transparent;
+              border-bottom: 10px solid #ffb53d;
             }
           }
           h1 {
@@ -103,6 +164,30 @@
             line-height: 80px;
             letter-spacing: 1px;
             color: #ffffff;
+            @include breackpoint(lg) {
+              font-size: 25px;
+              line-height: 35px;
+              width: 300px;
+              margin-top: 30px;
+            }
+            @include breackpoint(md) {
+              font-size: 15px;
+              line-height: 25px;
+              width: 250px;
+              margin-bottom: -70px;
+            }
+            @include breackpoint(sm) {
+              font-size: 9px;
+              line-height: 15px;
+              width: 300px;
+              margin-top: 30px;
+            }
+            @include breackpoint(xs) {
+              font-size: 5px;
+              line-height: 10px;
+              width: 250px;
+              margin-bottom: -70px;
+            }
           }
           h2 {
             font-style: normal;
@@ -111,6 +196,17 @@
             line-height: 42px;
             letter-spacing: 1px;
             color: #ffffff;
+            @include breackpoint(lg) {
+              font-size: 20px;
+              line-height: 50px;
+              width: 350px;
+            }
+            @include breackpoint(md) {
+              font-size: 15px;
+              line-height: 25px;
+              margin-bottom: -50px;
+              width: 250px;
+            }
           }
           button {
             border: none;
