@@ -3,7 +3,7 @@ import Modal from "../modal/Modal";
 import scss from "./main.module.scss";
 
 export default function Main() {
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
   return (
     <div className={scss.main__container}>
       <div className={scss.img__blur}>

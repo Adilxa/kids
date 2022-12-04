@@ -41,7 +41,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
 
-    button {
+    input[type = submit] {
         width: 35%;
         height: 50px;
         background: linear-gradient(273.49deg, #923DFF -57.13%, #BD00FF 133.91%);
@@ -98,8 +98,6 @@
         transform: rotate(-6.85deg);
     }
 }
-
-.active_content {}
 
 .active_wrapper {
     padding: 20px;
