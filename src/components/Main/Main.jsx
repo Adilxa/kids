@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Modal from "../modal/Modal";
+import Modal from "../modal/Modal" 
 import scss from "./main.module.scss";
 
 export default function Main() {
@@ -7,7 +7,6 @@ export default function Main() {
   return (
     <div className={scss.main__container}>
       <div className={scss.img__blur}>
-        <hr className={scss.first__hr} />
         <div className={scss.main__content}>
           <div className={scss.site__content}>
             <div className={scss.container}>
@@ -36,7 +35,6 @@ export default function Main() {
             </main>
           </div>
         </div>
-        <hr className={scss.second__hr} />
       </div>
       <Modal isActive={isActive} setIsActive={setIsActive} />
     </div>
