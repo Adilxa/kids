@@ -1,0 +1,130 @@
+.modal {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.modal_active {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s;
+}
+
+.content {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    width: 40%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    button {
+        width: 35%;
+        height: 50px;
+        background: linear-gradient(273.49deg, #923DFF -57.13%, #BD00FF 133.91%);
+        box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.3);
+        border-radius: 11px;
+        border: none;
+        color: white;
+        font-size: 20px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+
+}
+
+.inputs_container {
+    input {
+        width: 70%;
+        padding: 12px 20px;
+        margin: 4px 0;
+        display: inline-block;
+        border: 2px solid black;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 18px;
+    }
+}
+
+.figuries {
+    .first {
+        position: absolute;
+        left: 28.30%;
+        right: 72.02%;
+        top: 54.63%;
+        bottom: 37.51%;
+        transform: rotate(-6.85deg);
+    }
+
+    .second {
+        position: absolute;
+        position: absolute;
+        left: 27.30%;
+        right: 72.76%;
+        top: 29.94%;
+        bottom: 61.84%;
+        transform: rotate(-6.85deg);
+    }
+
+    .third {
+        position: absolute;
+        left: 32.59%;
+        right: 65.53%;
+        top: 21.34%;
+        bottom: 68.46%;
+        transform: rotate(-6.85deg);
+    }
+}
+
+.active_content {}
+
+.active_wrapper {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    width: 40%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    button {
+        width: 35%;
+        height: 50px;
+        background: linear-gradient(273.49deg, #923DFF -57.13%, #BD00FF 133.91%);
+        box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.3);
+        border-radius: 11px;
+        border: none;
+        color: white;
+        font-size: 20px;
+        margin: 20px auto;
+        cursor: pointer;
+    }
+
+}
