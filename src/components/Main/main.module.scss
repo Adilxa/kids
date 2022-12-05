@@ -22,14 +22,14 @@
     height: 100vh;
     
     @include breackpoint(sm){
-      height: 111vh;
+      height: 110vh;
     }
   }
   @include breackpoint(se){
-    height: 120xvh;
+    height: 120vh;
   }
   @include breackpoint(xs){
-    height: 111vh;
+    height: 110vh;
   }
   .img__blur {
     margin-top: 50px;
@@ -161,10 +161,10 @@
             }
           }
           @include breackpoint(sm){
-            top: 370px;
+            top: 350px;
           }
           @include breackpoint(se){
-            top:370px;
+            top:335px;
           }
           p {
             position: relative;
