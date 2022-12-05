@@ -19,14 +19,14 @@
       #000000 75.78%,
       #380749 106.36%
     );
-    height: 115vh;
+    height: 100vh;
     
     @include breackpoint(sm){
       height: 100vh;
     }
   }
   @include breackpoint(se){
-    height: 115vh;
+    height: 111vh;
   }
   .img__blur {
     margin-top: 50px;
@@ -161,7 +161,7 @@
             top: 330px;
           }
           @include breackpoint(se){
-            top:350px;
+            top:300px;
           }
           p {
             position: relative;
