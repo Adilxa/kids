@@ -154,7 +154,7 @@
           height: 50vh;
         }
         @include breackpoint(sm) {
-          height: 60vh;
+          height: 55vh;
         }
         @include breackpoint(sm) {
           height: 65vh;
@@ -178,6 +178,16 @@
             }
           }
           @include breackpoint(sm){
+            top: 300px;
+          }
+          @include breackpoint(se){
+            top:250px;
+          }
+          @include breackpoint(xs){
+            top:350px;
+            img{
+              width: 12%;
+            }
             top: 320px;
           }
           @include breackpoint(se){
@@ -269,7 +279,6 @@
             text-align: center;
           }
           > img {
-            height: 50px;
             @include breackpoint(md) {
               margin-left: 5px;
             }
