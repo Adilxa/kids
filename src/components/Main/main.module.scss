@@ -22,14 +22,14 @@
     height: 100vh;
     
     @include breackpoint(sm){
-      height: 111vh;
+      height: 100vh;
     }
   }
   @include breackpoint(se){
-    height: 120xvh;
+    height: 100vh;
   }
   @include breackpoint(xs){
-    height: 111vh;
+    height: 100vh;
   }
   .img__blur {
     margin-top: 50px;
@@ -87,10 +87,14 @@
       width: 100%;
       height: 90vh;
     }
+    @include breackpoint(sm){
+      margin-top: 5vh;
+    }
     @include breackpoint(se){
       margin-top: -50px;
-      height: 100vh;
+      height: 0vh;
     }
+
     .site__content {
       .container {
         width: 45%;
@@ -104,7 +108,10 @@
           margin: 0 auto;
         }
         @include breackpoint(sm){
-          margin-top: -5vh;
+          margin-top: -80px;
+        }
+        @include breackpoint(se){
+          margin-top: -20px;
         }
         .header {
           height: 15vh;
@@ -145,6 +152,12 @@
         @include breackpoint(md) {
           height: 70vh;
         }
+        @include breackpoint(sm) {
+          height: 65vh;
+        }
+        @include breackpoint(se) {
+          height: 55vh;
+        }
         .bonus__content {
           position: absolute;
           left: 34%;
@@ -161,10 +174,10 @@
             }
           }
           @include breackpoint(sm){
-            top: 370px;
+            top: 320px;
           }
           @include breackpoint(se){
-            top:370px;
+            top:220px;
           }
           p {
             position: relative;
