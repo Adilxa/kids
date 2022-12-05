@@ -85,7 +85,7 @@
     }
     @include breackpoint(md) {
       width: 100%;
-      height: 90vh;
+      height: 10vh;
     }
     @include breackpoint(sm){
       margin-top: 5vh;
@@ -151,7 +151,10 @@
           margin: 0 auto;
         }
         @include breackpoint(md) {
-          height: 70vh;
+          height: 50vh;
+        }
+        @include breackpoint(sm) {
+          height: 60vh;
         }
         @include breackpoint(sm) {
           height: 65vh;
@@ -168,7 +171,7 @@
             left: 53%;
           }
           @include breackpoint(md) {
-            top: 380px;
+            top: 320px;
             left: 2%;
             img{
               width: 15%;
@@ -191,6 +194,12 @@
               padding: 5px 15px;
               left: 20%;
               bottom: 30%;
+            }
+            @include breackpoint(xs){
+              padding: 5px 2px;
+              left: 20%;
+              bottom: 30%;
+              font-size: small;
             }
           }
           p::before {
