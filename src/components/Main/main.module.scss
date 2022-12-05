@@ -26,7 +26,7 @@
     }
   }
   @include breackpoint(se){
-    height: 111vh;
+    height: 120xvh;
   }
   @include breackpoint(xs){
     height: 111vh;
@@ -164,7 +164,7 @@
             top: 400px;
           }
           @include breackpoint(se){
-            top:300px;
+            top:400px;
           }
           p {
             position: relative;
