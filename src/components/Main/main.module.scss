@@ -19,6 +19,13 @@
       #000000 75.78%,
       #380749 106.36%
     );
+    
+    @include breackpoint(sm){
+      height: 100vh;
+    }
+  }
+  @include breackpoint(se){
+    height: 115vh;
   }
   .img__blur {
     margin-top: 50px;
@@ -40,9 +47,11 @@
 
       }
     }
+
     @include breackpoint(xs) {
       display: block;
     }
+
     .first__hr {
       height: 2px;
       background-color: white;
@@ -78,6 +87,9 @@
     @include breackpoint(md) {
       width: 100%;
       height: 90vh;
+    }
+    @include breackpoint(se){
+      margin-top: -50px;
     }
     .site__content {
       .container {
@@ -145,7 +157,9 @@
               width: 15%;
             }
           }
-         
+          @include breackpoint(se){
+            top:350px;
+          }
           p {
             position: relative;
             left: 28%;
