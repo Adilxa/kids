@@ -19,9 +19,10 @@
       #000000 75.78%,
       #380749 106.36%
     );
+    height: 115vh;
     
     @include breackpoint(sm){
-      height: 100vh;
+      height: 110vh;
     }
   }
   @include breackpoint(se){
