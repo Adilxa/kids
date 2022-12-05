@@ -28,6 +28,9 @@
   @include breackpoint(se){
     height: 111vh;
   }
+  @include breackpoint(xs){
+    height: 111vh;
+  }
   .img__blur {
     margin-top: 50px;
     height: 90vh;
