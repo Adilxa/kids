@@ -154,14 +154,14 @@
             left: 53%;
           }
           @include breackpoint(md) {
-            top: 410px;
+            top: 380px;
             left: 2%;
             img{
               width: 15%;
             }
           }
           @include breackpoint(sm){
-            top: 330px;
+            top: 400px;
           }
           @include breackpoint(se){
             top:300px;
