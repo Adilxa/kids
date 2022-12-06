@@ -45,6 +45,7 @@
   flex-direction: column;
   padding-top: 50px;
   padding-bottom: 50px;
+  position: relative;
   @include breackpoint(md) {
     width: 90%;
   }
@@ -89,32 +90,30 @@
 .figuries {
   .first {
     position: absolute;
-    left: 28.3%;
-    right: 72.02%;
-    top: 54.63%;
+    width: 20%;
+    left: -5.3%;
+    top: -5.63%;
     bottom: 37.51%;
     transform: rotate(-6.85deg);
     @include breackpoint(md) {
-      width: 10%;
-      left: 44.16%;
+      width: 15%;
+      left: -50.16%;
       right: 45.39%;
-      top: 22.28%;
+      top: -5.28%;
       bottom: 72.79%;
     }
   }
-
   .second {
     position: absolute;
     position: absolute;
-    left: 27.3%;
-    right: 72.76%;
-    top: 29.94%;
-    bottom: 61.84%;
+    width: 15%;
+    right: -5.76%;
+    top: 70.94%;
+    bottom: 51.84%;
     transform: rotate(-6.85deg);
     @include breackpoint(md) {
       width: 10%;
-      left: 1.71%;
-      right: 80.88%;
+      right:-5.88%;
       top: 30.35%;
       bottom: 65.5%;
     }
@@ -122,57 +121,18 @@
 
   .third {
     position: absolute;
-    left: 32.59%;
+    width: 20%;
+    left: 10.59%;
     right: 65.53%;
-    top: 21.34%;
-    bottom: 68.46%;
+    top: 78.34%;
+    bottom: 20.46%;
     transform: rotate(-6.85deg);
     @include breackpoint(md) {
       width: 15%;
       left: 15.74%;
       right: 62.96%;
-      top: 21.34%;
+      top: 90.34%;
       bottom: 71.7%;
-    }
-  }
-}
-
-.active_wrapper {
-  background: url(../../../public/images/Group17820.svg);
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 55%;
-  padding: 20px;
-  border-radius: 20px;
-  background-color: white;
-  width: 40%;
-  height: 50%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  @include breackpoint(md) {
-    width: 90%;
-  }
-  button {
-    width: 35%;
-    height: 50px;
-    background: linear-gradient(273.49deg, #923dff -57.13%, #bd00ff 133.91%);
-    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.3);
-    border-radius: 11px;
-    border: none;
-    color: white;
-    font-size: 20px;
-    margin: 20px auto;
-    cursor: pointer;
-    @include breackpoint(md) {
-      width: 60%;
-    }
-    a{
-      color: white;
-      text-decoration: none;
     }
   }
 }

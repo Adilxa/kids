@@ -1,0 +1,103 @@
+@import "../Main/adaptive.scss";
+.back {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(
+    258.75deg,
+    #180e1f 73.28%,
+    rgba(62, 40, 106, 0.98) 100%
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .figuries {
+    .first {
+      position: absolute;
+      width: 15%;
+      left: -5%;
+      right: 0%;
+      top: -2.63%;
+      bottom: 37.51%;
+      transform: rotate(-6.85deg);
+      @include breackpoint(md) {
+        width: 20%;
+        left: -0%;
+        right: 0%;
+        top: 2.63%;
+        bottom: 37.51%;
+      }
+    }
+  
+    .second {
+      position: absolute;
+      right: -5%;
+      top: 65.94%;
+      bottom: 61.84%;
+      transform: rotate(-6.85deg);
+      @include breackpoint(md) {
+        width: 10%;
+        right: -5%;
+        top: 65.94%;
+        bottom: 61.84%;
+      }
+    }
+  
+    .third {
+      position: absolute;
+      left: 32.59%;
+      right: 65.53%;
+      top: 80.34%;
+      bottom: 68.46%;
+      transform: rotate(-6.85deg);
+      @include breackpoint(md) {
+        width: 25%;
+        left: 32.59%;
+        right: 65.53%;
+        top: 80.34%;
+        bottom: 68.46%;
+      }
+    }
+  }
+  
+  .active_wrapper {
+    background: url(../../../public/images/Group17820.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 55%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    width: 40%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    @include breackpoint(md) {
+      width: 90%;
+    }
+    button {
+      width: 35%;
+      height: 50px;
+      background: linear-gradient(273.49deg, #923dff -57.13%, #bd00ff 133.91%);
+      box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.3);
+      border-radius: 11px;
+      border: none;
+      color: white;
+      font-size: 20px;
+      margin: 20px auto;
+      cursor: pointer;
+      @include breackpoint(md) {
+        width: 60%;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
