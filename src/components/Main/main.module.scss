@@ -47,7 +47,7 @@
       background-size: 500px;
       background-position: 80%;
       @include breackpoint(md) {
-        background-position: top right;
+        background-position: top center;
       }
     }
 
@@ -75,7 +75,7 @@
   .main__content {
     width: 80%;
     margin: 0 auto;
-    height: 80vh;
+    height: 85vh;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -88,7 +88,7 @@
       height: 10vh;
     }
     @include breackpoint(sm) {
-      margin-top: 5vh;
+      margin-top: 1vh;
     }
     @include breackpoint(se) {
       margin-top: -50px;
@@ -107,7 +107,7 @@
           margin: 0 auto;
         }
         @include breackpoint(sm) {
-          margin-top: -80px;
+          margin-top: -40px;
         }
         @include breackpoint(se) {
           margin-top: -20px;
@@ -121,6 +121,7 @@
             height: 5vh;
             margin-bottom: 5vh;
           }
+
           img {
             width: 100px;
           }
@@ -136,7 +137,6 @@
             @include breackpoint(xs) {
               font-size: 10px;
             }
-            
           }
         }
       }
@@ -156,10 +156,10 @@
           height: 350px;
         }
         @include breackpoint(sm) {
-          height: 400px;
+          height: 355px;
         }
         @include breackpoint(se) {
-          height:370px;
+          height: 320px;
         }
         .bonus__content {
           position: absolute;
@@ -176,12 +176,12 @@
               width: 15%;
             }
           }
-          
+
           @include breackpoint(sm) {
             top: 35%;
           }
           @include breackpoint(se) {
-            top: 32%;
+            top: 30%;
           }
           @include breackpoint(xs) {
             top: 32%;
@@ -285,6 +285,12 @@
             @include breackpoint(md) {
               margin-left: 5px;
             }
+            @include breackpoint(sm) {
+             width: 100px;
+            }
+            @include breackpoint(se) {
+              width: 60px;
+             }
           }
           .infO__content {
             margin-left: 10px;
@@ -292,9 +298,29 @@
               font-style: normal;
               font-weight: 500;
               font-size: 13px;
+              @include breackpoint(sm) {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+              }
+              @include breackpoint(se) {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+              }
             }
             span:nth-child(1) {
               font-size: 10px;
+              @include breackpoint(sm) {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+              }
+              @include breackpoint(se) {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 10px;
+              }
             }
             span:nth-child(2) {
               font-size: 13px;
