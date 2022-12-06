@@ -158,8 +158,17 @@
         @include breackpoint(sm) {
           height: 355px;
         }
+        @include breackpoint(el) {
+          height: 250px;
+        }
+        @include breackpoint(pr) {
+          height: 390px;
+        }
         @include breackpoint(se) {
           height: 320px;
+        }
+        @include breackpoint(xs) {
+          height: 300px;
         }
         .bonus__content {
           position: absolute;
@@ -170,7 +179,7 @@
             left: 53%;
           }
           @include breackpoint(md) {
-            top: 40%;
+            top: 35%;
             left: 2%;
             img {
               width: 15%;
@@ -179,6 +188,12 @@
 
           @include breackpoint(sm) {
             top: 35%;
+          }
+          @include breackpoint(el) {
+            top: 29%;
+          }
+          @include breackpoint(pr) {
+            top: 32%;
           }
           @include breackpoint(se) {
             top: 30%;

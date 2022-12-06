@@ -1,30 +1,30 @@
 @mixin breackpoint($point) {
   @if $point==lg {
-    @media (max-width:992px) {
+    @media (max-width: 992px) {
       @content;
     }
-  }
-
-  @else if $point==md {
-    @media (max-width:768px) {
+  } @else if $point==md {
+    @media (max-width: 768px) {
       @content;
     }
-  }
-
-  @else if $point==sm {
-    @media (max-width:576px) {
+  } @else if $point==sm {
+    @media (max-width: 576px) {
       @content;
     }
-  }
-
-  @else if $point ==se {
-    @media(max-width:375px) {
-      @content
+  } @else if $point == el {
+    @media (max-width: 425px) {
+      @content;
     }
-
-  }
-  @else if $point==xs {
-    @media (max-width:320px) {
+  } @else if $point ==pr {
+    @media (max-width: 415px) {
+      @content;
+    }
+  } @else if $point ==se {
+    @media (max-width: 375px) {
+      @content;
+    }
+  } @else if $point==xs {
+    @media (max-width: 320px) {
       @content;
     }
   }
