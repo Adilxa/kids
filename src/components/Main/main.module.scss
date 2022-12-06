@@ -133,6 +133,10 @@
             @include breackpoint(md) {
               font-size: 16px;
             }
+            @include breackpoint(xs) {
+              font-size: 10px;
+            }
+            
           }
         }
       }
@@ -149,13 +153,13 @@
           margin: 0 auto;
         }
         @include breackpoint(md) {
-          height: 40vh;
+          height: 350px;
         }
         @include breackpoint(sm) {
-          height: 55vh;
+          height: 400px;
         }
         @include breackpoint(se) {
-          height: 40vh;
+          height:370px;
         }
         .bonus__content {
           position: absolute;
@@ -166,20 +170,21 @@
             left: 53%;
           }
           @include breackpoint(md) {
-            top: 260px;
+            top: 40%;
             left: 2%;
             img {
               width: 15%;
             }
           }
+          
           @include breackpoint(sm) {
-            top: 240px;
+            top: 35%;
           }
           @include breackpoint(se) {
-            top: 180px;
+            top: 32%;
           }
           @include breackpoint(xs) {
-            top: 190px;
+            top: 32%;
             img {
               width: 12%;
             }

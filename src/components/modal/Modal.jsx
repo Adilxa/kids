@@ -76,7 +76,7 @@ export default function Modal({ isActive, setIsActive }) {
         >
           <h1>Идём на вебинар{")"} </h1>
           {
-            isWait ? <img src="https://cdn.dribbble.com/users/1152773/screenshots/3832732/loader2.gif" alt="loading"/> : <div className={scss.inputs_container}>
+            isWait ? <img src="https://aaravwebsolutions.com/images/loader.gif" alt="loading"/> : <div className={scss.inputs_container}>
             <input required type="text" placeholder="Имя" name="name" />
             <input required type="number" placeholder="Номер" name="number" />
           </div>
