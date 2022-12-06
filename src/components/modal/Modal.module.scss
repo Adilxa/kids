@@ -63,6 +63,10 @@
       width: 60%;
     }
   }
+  img{
+    width: 140px;
+    margin: 0 auto;
+  }
 }
 
 .inputs_container {
@@ -165,6 +169,10 @@
     cursor: pointer;
     @include breackpoint(md) {
       width: 60%;
+    }
+    a{
+      color: white;
+      text-decoration: none;
     }
   }
 }
