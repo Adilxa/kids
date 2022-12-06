@@ -153,16 +153,16 @@
           margin: 0 auto;
         }
         @include breackpoint(md) {
-          height: 350px;
+          height: 290px;
         }
         @include breackpoint(sm) {
-          height: 355px;
+          height: 255px;
         }
         @include breackpoint(el) {
           height: 250px;
         }
         @include breackpoint(pr) {
-          height: 390px;
+          height: 40vh;
         }
         @include breackpoint(se) {
           height: 320px;
@@ -187,7 +187,7 @@
           }
 
           @include breackpoint(sm) {
-            top: 35%;
+            top: 32%;
           }
           @include breackpoint(el) {
             top: 29%;
@@ -199,7 +199,7 @@
             top: 30%;
           }
           @include breackpoint(xs) {
-            top: 32%;
+            top: 28%;
             img {
               width: 12%;
             }
@@ -236,7 +236,7 @@
         h1 {
           font-style: normal;
           font-weight: 600;
-          font-size: 62px;
+          font-size: 57px;
           letter-spacing: 1px;
           color: #ffffff;
           @include breackpoint(md) {
@@ -250,7 +250,7 @@
           margin-top: 20px;
           margin-bottom: 20px;
           font-weight: 400;
-          font-size: 30px;
+          font-size: 28px;
           letter-spacing: 1px;
           color: #ffffff;
           @include breackpoint(md) {
@@ -270,6 +270,7 @@
           line-height: 42px;
           cursor: pointer;
           color: #ffffff;
+          margin-bottom: 15px;
           @include breackpoint(md) {
             // margin-top: 20% !important;
             width: 85%;

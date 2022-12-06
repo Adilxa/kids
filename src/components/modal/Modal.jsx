@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import scss from "./Modal.module.scss";
 import emailjs from "emailjs-com";
+import { useNavigate } from "react-router-dom";
 
 export default function Modal({ isActive, setIsActive }) {
-  const [active, setActive] = useState(false);
-  const [isWait, setWait] = useState(false);
+  const navigate = useNavigate();
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -17,15 +17,12 @@ export default function Modal({ isActive, setIsActive }) {
       .then(
         (result) => {
           if (result.text === "OK") {
-            setActive(true)
-            setWait(false)
+            navigate("/thx");
           }
         },
         (error) => {}
       )
-      .finally(
-        setWait(true)
-      )
+      .finally(navigate("/thx"));
     e.target.reset();
   };
   return (
@@ -33,74 +30,37 @@ export default function Modal({ isActive, setIsActive }) {
       className={isActive ? scss.modal_active : scss.modal}
       onClick={() => {
         setIsActive(false);
-        setActive(false);
       }}
     >
-      {active ? (
-        <div
-          className={scss.active_wrapper}
-          onClick={(e) => e.stopPropagation()}
-        >
-          <div className={scss.active_content}>
-            <h1>Спасибо за заявку{")"} </h1>
-            <button>
-              <a href="https://t.me/+KXfffINC7HxmMGI6" target="_blanck">
-                {" "}
-                Получить бонус
-              </a>
-            </button>
-            <div className={scss.figuries}>
-              <img
-                className={scss.first}
-                src="/images/Vectorfigure.svg"
-                alt="img"
-              />
-              <img
-                className={scss.second}
-                src="/images/Vectorfigure2.svg"
-                alt="img"
-              />
-              <img
-                className={scss.third}
-                src="/images/Vectorfigure3.svg"
-                alt="img"
-              />
-            </div>
-          </div>
+      <form
+        onSubmit={sendEmail}
+        className={scss.content}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <h1>Идём на вебинар{")"} </h1>
+        <div className={scss.inputs_container}>
+          <input required type="text" placeholder="Имя" name="name" />
+          <input required type="number" placeholder="+996" name="number" />
         </div>
-      ) : (
-        <form
-          onSubmit={sendEmail}
-          className={scss.content}
-          onClick={(e) => e.stopPropagation()}
-        >
-          <h1>Идём на вебинар{")"} </h1>
-          {
-            isWait ? <img src="./images/loader.gif" alt="loading"/> : <div className={scss.inputs_container}>
-            <input required type="text" placeholder="Имя" name="name" />
-            <input required type="number" placeholder="Номер" name="number" />
-          </div>
-          }
-          <div className={scss.figuries}>
-            <img
-              className={scss.first}
-              src="/images/Vectorfigure.svg"
-              alt="img"
-            />
-            <img
-              className={scss.second}
-              src="/images/Vectorfigure2.svg"
-              alt="img"
-            />
-            <img
-              className={scss.third}
-              src="/images/Vectorfigure3.svg"
-              alt="img"
-            />
-          </div>
-          <input type="submit" />
-        </form>
-      )}
+        <div className={scss.figuries}>
+          <img
+            className={scss.first}
+            src="/images/Vectorfigure.svg"
+            alt="img"
+          />
+          <img
+            className={scss.second}
+            src="/images/Vectorfigure2.svg"
+            alt="img"
+          />
+          <img
+            className={scss.third}
+            src="/images/Vectorfigure3.svg"
+            alt="img"
+          />
+        </div>
+        <input type="submit" />
+      </form>
     </div>
   );
 }
