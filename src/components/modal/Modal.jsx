@@ -1,17 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import scss from "./Modal.module.scss";
 import emailjs from "emailjs-com";
 import { useNavigate } from "react-router-dom";
+import PhoneInput from "react-phone-input-2";
 
 export default function Modal({ isActive, setIsActive }) {
   const navigate = useNavigate();
+  const [name, setName] = useState("");
+  const [number, setNumber] = useState("");
   const sendEmail = (e) => {
     e.preventDefault();
+    const data = {
+      name: name,
+      number: number,
+    };
     emailjs
-      .sendForm(
+      .send(
         "service_j1oraxn",
         "template_ci1ldfe",
-        e.target,
+        { ...data },
         "zudsa3IG-MCCSbV4h"
       )
       .then(
@@ -39,8 +46,21 @@ export default function Modal({ isActive, setIsActive }) {
       >
         <h1>Идём на вебинар{")"} </h1>
         <div className={scss.inputs_container}>
-          <input required type="text" placeholder="Имя" name="name" />
-          <input required type="number" placeholder="+996" name="number" />
+          <input
+            required
+            type="text"
+            placeholder="Имя"
+            name="name"
+            onChange={(e) => setName(e.target.value)}
+          />
+          <PhoneInput
+            onChange={(value) => setNumber(value)}
+            value={number}
+            name="number"
+            country={"kg"}
+            placeholder="+(999) 999-999"
+            required
+          />
         </div>
         <div className={scss.figuries}>
           <img
