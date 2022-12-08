@@ -16,11 +16,11 @@ export default function Modal({ isActive, setIsActive }) {
     };
     emailjs
       .send(
-        "service_j1oraxn",
-        "template_ci1ldfe",
+        "service_po935za",
+        "template_h52orcg",
         { ...data },
-        "zudsa3IG-MCCSbV4h"
-      )
+        "0mSmsVBvqYpF4yuY7"
+        )
       .then(
         (result) => {
           if (result.text === "OK") {
@@ -79,7 +79,7 @@ export default function Modal({ isActive, setIsActive }) {
             alt="img"
           />
         </div>
-        <input type="submit" />
+        <input type="submit" value="Отправить"/>
       </form>
     </div>
   );
